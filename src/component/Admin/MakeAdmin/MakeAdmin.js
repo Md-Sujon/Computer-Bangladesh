@@ -11,10 +11,10 @@ const MakeAdmin = () => {
     <div className="col-md-7 ">
     <h1>Make Admin</h1>
     <form className="col-md-7 ">
-  <div class="form-group">
+  <div className="form-group">
        <label for="exampleInputPassword1">Email</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="sumon@gmail.com"/>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="sumon@gmail.com"/>
+    <button type="submit" className="btn btn-primary">Submit</button>
     </div>
     
 </form>

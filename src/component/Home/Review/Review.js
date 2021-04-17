@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import image1 from '../../../images/5.png'
 import image2 from '../../../images/6.png'
 import image3 from '../../../images/3.png'
@@ -28,6 +28,18 @@ const TestimonialData=[
 
 
 const Review = () => {
+
+    const [review,setReviews]=useState([]);
+    
+    console.log(review);
+    
+        useEffect(() =>{
+                fetch('http://localhost:5000/reviews')
+                .then(res=>res.json())
+                .then(data=>setReviews(data))
+                
+           },[])
+
     return (
         <section className="bg-light">
         <div className="container">
@@ -37,7 +49,7 @@ const Review = () => {
             </div>
             <div className="row d-flex justify-content-center">
                  {
-                    TestimonialData.map(testimonial => <ReviewCard testimonial={testimonial} key={testimonial.name}/>)
+                    review.map(testimonial => <ReviewCard testimonial={testimonial} key={testimonial._id}/>)
                  }
              </div>
         </div>
