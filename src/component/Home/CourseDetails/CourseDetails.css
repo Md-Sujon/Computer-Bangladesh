@@ -1,0 +1,11 @@
+.animation p:hover, h1:hover {
+    background-color: rgb(247, 199, 234);
+  }
+  .img:hover {
+    transition-duration: 0.5s;
+    transform-origin: 20% 40%;
+    background-color:red;
+    transform: scale(1.5);
+  }
+  
+  

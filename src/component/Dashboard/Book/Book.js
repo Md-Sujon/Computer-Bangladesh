@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 import { useForm } from "react-hook-form";
 import ProcessPayment from '../ProcessPayment/ProcessPayment';
+import { UserContext } from '../../../App';
 
 const Book = () => {
+  const [loggedInUser,setLoggedInUser] = useContext(UserContext);
   const { register, handleSubmit} = useForm(' ');
   const [registrationData,setRegistrationData] = useState(null)
 
@@ -28,7 +30,7 @@ const url =`http://localhost:5000/AddRegistration`;
    headers: {
        'content-Type': 'application/json'
    },
-   body: JSON.stringify(eventData)
+   body: JSON.stringify( eventData , {email: loggedInUser.email})
   })
   .then(res => res.json())
   .then(success => {

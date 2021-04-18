@@ -8,6 +8,7 @@ import firebaseConfig from './FirebaseConfig';
 import { useContext} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGooglePlusG} from '@fortawesome/free-brands-svg-icons';
+import Navbar from "../Home/Navbar/Navbar";
 
 
 
@@ -44,8 +45,12 @@ const Login = () => {
 }
 
     return (
-        <div className="Login"> 
+        <div>
+          <Navbar></Navbar>
+          <div className="Login"> 
+        
            <button type="submit" onClick={handleGoogleSingIn} class="btn btn-primary"> <FontAwesomeIcon icon={faGooglePlusG} />Google Login</button>
+        </div>
         </div>
     );
 };
