@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CourseDetails from '../CourseDetails/CourseDetails';
+import './Course.css'
 
 const Course = () => {
 
@@ -18,8 +19,8 @@ console.log(course);
     return (
         <section className="services-container">
         <div className="text-center mt-3"> 
-        <h4 className="text-primary">Popular Course</h4>
-        <h1 className="mt-3">Course We Provide</h1>
+        <h4 className="text-primary responsive">Popular Course</h4>
+        <h1 className="mt-3 responsive">Course We Provide</h1>
         </div>
 
         <div className=" d-flex justify-content-center">
