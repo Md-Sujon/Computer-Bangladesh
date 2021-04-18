@@ -23,6 +23,7 @@ const handlePaymentSuccess = paymentId => {
     phone : registrationData.phone
     
 }
+
 const url =`https://calm-beach-60595.herokuapp.com/AddRegistration`;
   
   fetch(url, {

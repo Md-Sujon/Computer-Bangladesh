@@ -21,7 +21,7 @@ const RegisterList = () => {
             <div className="col-md-2">
             <AddMinSidebar></AddMinSidebar>
             </div>
-    <div className="col-md-7 ">
+    <div className="col-md-7">
     <h1>Register List</h1>
     <h5 className="text-primary">Total Registration : {registration.length}</h5>
     {
