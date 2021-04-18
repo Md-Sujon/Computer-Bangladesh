@@ -13,7 +13,7 @@ const AddCourse = () => {
         description: data.description,
         imageURL: imageURL
     }
-    const url =`http://localhost:5000/course`;
+    const url =`https://calm-beach-60595.herokuapp.com/course`;
     
     fetch(url, {
      method:'POST',

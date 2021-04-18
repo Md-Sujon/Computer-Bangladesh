@@ -7,7 +7,7 @@ const Delete = ({dele}) => {
                 
     const deleteProduct = (id) => {
         console.log(id);
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://calm-beach-60595.herokuapp.com/delete/${id}`, {
           method: 'DELETE'
         })
         .then(res => res.json())

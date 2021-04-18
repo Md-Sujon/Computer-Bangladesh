@@ -9,7 +9,7 @@ const ManageCourse = ({dele}) => {
     console.log('this result', del);
 
     useEffect (()=>{
-        const url= 'http://localhost:5000/courses'
+        const url= 'https://calm-beach-60595.herokuapp.com/courses'
         fetch(url)
         .then(res=>res.json())
         .then(data=>setDel(data))

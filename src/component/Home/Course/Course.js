@@ -8,7 +8,7 @@ const Course = () => {
 console.log(course);
 
     useEffect(() =>{
-            fetch('http://localhost:5000/courses')
+            fetch('https://calm-beach-60595.herokuapp.com/courses')
             .then(res=>res.json())
             .then(data=>setCourse(data))
             

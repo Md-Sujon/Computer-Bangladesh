@@ -23,7 +23,7 @@ const handlePaymentSuccess = paymentId => {
     phone : registrationData.phone
     
 }
-const url =`http://localhost:5000/AddRegistration`;
+const url =`https://calm-beach-60595.herokuapp.com/AddRegistration`;
   
   fetch(url, {
    method:'POST',
@@ -74,7 +74,8 @@ const url =`http://localhost:5000/AddRegistration`;
 
 <div style={{display:registrationData ? 'block':'none'}} className="col-md-3">
 
-       <h1>Please Pay for me</h1>
+       <h1>Please give me payment</h1>
+       <h4> 150 $</h4>
        <ProcessPayment handlePayment={handlePaymentSuccess}></ProcessPayment>
      </div>
 

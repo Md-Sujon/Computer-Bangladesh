@@ -15,7 +15,7 @@ const Review = () => {
         description: data.description,
         imageURL: imageURL
     }
-    const url =`http://localhost:5000/review`;
+    const url =`https://calm-beach-60595.herokuapp.com/review`;
     
     fetch(url, {
      method:'POST',

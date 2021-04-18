@@ -8,7 +8,7 @@ const RegisterList = () => {
     const [registration,setRegistration]=useState([]);
     const [loggedInUser,setLoggedInUser]= useContext(UserContext);
     useEffect(() => {
-        fetch('http://localhost:5000/Registrations')
+        fetch('https://calm-beach-60595.herokuapp.com/Registrations')
         .then(res=>res.json())
         .then(data=>setRegistration(data))
     },[])

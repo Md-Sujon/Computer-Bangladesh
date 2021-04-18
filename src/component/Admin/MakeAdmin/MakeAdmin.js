@@ -11,7 +11,7 @@ const MakeAdmin = () => {
           email: data.email
           
       }
-      const url =`http://localhost:5000/isAdmin`;
+      const url =`https://calm-beach-60595.herokuapp.com/isAdmin`;
       
       fetch(url, {
        method:'POST',

@@ -34,7 +34,7 @@ const Review = () => {
     console.log(review);
     
         useEffect(() =>{
-                fetch('http://localhost:5000/reviews')
+                fetch('https://calm-beach-60595.herokuapp.com/reviews')
                 .then(res=>res.json())
                 .then(data=>setReviews(data))
                 
